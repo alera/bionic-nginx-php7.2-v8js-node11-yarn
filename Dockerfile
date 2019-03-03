@@ -11,3 +11,5 @@ apt-get autoremove -y && apt-get autoclean -y && apt-get clean -y && rm -rf /var
 rm -rf /root/.vpython-root/ && rm -rf /root/.vpython_cipd_cache/
 
 ADD ./etc/nginx/sites-available/default /etc/nginx/sites-available/
+
+CMD service php7.2-fpm start && nginx -g 'daemon off;'
