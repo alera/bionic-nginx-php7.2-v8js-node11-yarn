@@ -1,4 +1,4 @@
-FROM aleraru/bionic-php7.2-v8js:latest
+FROM aleraru/bionic-php7.2-v8js:1.0.2
 MAINTAINER Pavel Pavlov <pavel.pavlov@alera.ru>
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && \
 apt-get install -y apt-utils curl gnupg nginx && \
